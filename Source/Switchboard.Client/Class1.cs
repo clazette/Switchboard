@@ -8,5 +8,6 @@ namespace Switchboard.Client
 {
     public class Class1
     {
+        // Chad's comment to mess with git.
     }
 }
