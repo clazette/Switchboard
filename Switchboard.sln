@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lib", "Lib", "{08A5CBD2-CAC8-4A79-B5A1-361BBD6D7794}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{7AAB5964-AC5B-40E7-A652-91DD8D6470A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2A8C286E-CFFF-4E7B-A291-E090A69AD84E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{0CE44446-0666-49F7-94AE-40A0B36ABD14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.ConsoleHost", "Hosts\Switchboard.ConsoleHost\Switchboard.ConsoleHost.csproj", "{79E38974-6C4C-4B53-9472-FBA4F1267506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.ServiceHost", "Hosts\Switchboard.ServiceHost\Switchboard.ServiceHost.csproj", "{64C42E81-A3F6-4446-B308-F304999B557B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.Client", "Source\Switchboard.Client\Switchboard.Client.csproj", "{BA82AE3D-1689-4520-9004-A816F5E76F21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.Common", "Source\Switchboard.Common\Switchboard.Common.csproj", "{B335AB12-E2FD-4998-92E7-E818D23756C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.Server", "Source\Switchboard.Server\Switchboard.Server.csproj", "{59BE28C4-118F-4521-B3D3-A6886446F4F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switchboard.Tests", "Tests\Switchboard.Tests\Switchboard.Tests.csproj", "{E844B76C-04F8-480D-9473-A812416201FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC75CDDC-5323-4A83-A5BA-3FA2F61B533D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79E38974-6C4C-4B53-9472-FBA4F1267506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E38974-6C4C-4B53-9472-FBA4F1267506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E38974-6C4C-4B53-9472-FBA4F1267506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E38974-6C4C-4B53-9472-FBA4F1267506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C42E81-A3F6-4446-B308-F304999B557B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C42E81-A3F6-4446-B308-F304999B557B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C42E81-A3F6-4446-B308-F304999B557B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C42E81-A3F6-4446-B308-F304999B557B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA82AE3D-1689-4520-9004-A816F5E76F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA82AE3D-1689-4520-9004-A816F5E76F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA82AE3D-1689-4520-9004-A816F5E76F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA82AE3D-1689-4520-9004-A816F5E76F21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B335AB12-E2FD-4998-92E7-E818D23756C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B335AB12-E2FD-4998-92E7-E818D23756C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B335AB12-E2FD-4998-92E7-E818D23756C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B335AB12-E2FD-4998-92E7-E818D23756C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59BE28C4-118F-4521-B3D3-A6886446F4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59BE28C4-118F-4521-B3D3-A6886446F4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59BE28C4-118F-4521-B3D3-A6886446F4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59BE28C4-118F-4521-B3D3-A6886446F4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E844B76C-04F8-480D-9473-A812416201FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E844B76C-04F8-480D-9473-A812416201FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E844B76C-04F8-480D-9473-A812416201FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E844B76C-04F8-480D-9473-A812416201FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79E38974-6C4C-4B53-9472-FBA4F1267506} = {0CE44446-0666-49F7-94AE-40A0B36ABD14}
+		{64C42E81-A3F6-4446-B308-F304999B557B} = {0CE44446-0666-49F7-94AE-40A0B36ABD14}
+		{BA82AE3D-1689-4520-9004-A816F5E76F21} = {7AAB5964-AC5B-40E7-A652-91DD8D6470A8}
+		{B335AB12-E2FD-4998-92E7-E818D23756C9} = {7AAB5964-AC5B-40E7-A652-91DD8D6470A8}
+		{59BE28C4-118F-4521-B3D3-A6886446F4F9} = {7AAB5964-AC5B-40E7-A652-91DD8D6470A8}
+		{E844B76C-04F8-480D-9473-A812416201FE} = {2A8C286E-CFFF-4E7B-A291-E090A69AD84E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://gadgetport.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Hosts\\Switchboard.ConsoleHost\\Switchboard.ConsoleHost.csproj
+		SccProjectTopLevelParentUniqueName1 = Switchboard.sln
+		SccProjectName1 = Hosts/Switchboard.ConsoleHost
+		SccLocalPath1 = Hosts\\Switchboard.ConsoleHost
+		SccProjectUniqueName2 = Hosts\\Switchboard.ServiceHost\\Switchboard.ServiceHost.csproj
+		SccProjectTopLevelParentUniqueName2 = Switchboard.sln
+		SccProjectName2 = Hosts/Switchboard.ServiceHost
+		SccLocalPath2 = Hosts\\Switchboard.ServiceHost
+		SccProjectUniqueName3 = Source\\Switchboard.Client\\Switchboard.Client.csproj
+		SccProjectTopLevelParentUniqueName3 = Switchboard.sln
+		SccProjectName3 = Source/Switchboard.Client
+		SccLocalPath3 = Source\\Switchboard.Client
+		SccProjectUniqueName4 = Source\\Switchboard.Common\\Switchboard.Common.csproj
+		SccProjectTopLevelParentUniqueName4 = Switchboard.sln
+		SccProjectName4 = Source/Switchboard.Common
+		SccLocalPath4 = Source\\Switchboard.Common
+		SccProjectUniqueName5 = Source\\Switchboard.Server\\Switchboard.Server.csproj
+		SccProjectTopLevelParentUniqueName5 = Switchboard.sln
+		SccProjectName5 = Source/Switchboard.Server
+		SccLocalPath5 = Source\\Switchboard.Server
+		SccProjectUniqueName6 = Tests\\Switchboard.Tests\\Switchboard.Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = Switchboard.sln
+		SccProjectName6 = Tests/Switchboard.Tests
+		SccLocalPath6 = Tests\\Switchboard.Tests
+	EndGlobalSection
+EndGlobal

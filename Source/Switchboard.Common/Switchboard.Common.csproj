@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B335AB12-E2FD-4998-92E7-E818D23756C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Switchboard.Common</RootNamespace>
+    <AssemblyName>Switchboard.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationHosting\ApplicationControlBase.cs" />
+    <Compile Include="ApplicationHosting\ApplicationState.cs" />
+    <Compile Include="ApplicationHosting\ApplicationStateChangedEventArgs.cs" />
+    <Compile Include="ApplicationHosting\IApplication.cs" />
+    <Compile Include="ApplicationHosting\IApplicationConfiguration.cs" />
+    <Compile Include="ApplicationHosting\IApplicationDescriptor.cs" />
+    <Compile Include="ApplicationHosting\IApplicationFactory.cs" />
+    <Compile Include="ApplicationHosting\IApplicationInvokeArgument.cs" />
+    <Compile Include="ApplicationHosting\IApplicationServiceController.cs" />
+    <Compile Include="ApplicationHosting\ReflectionUtility.cs" />
+    <Compile Include="ApplicationHosting\RemoteActivator.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\ActivationException.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\ActivationHostDescription.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\ActivationHostEventArgs.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\AppDomainActivator.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\CrossDomainEventRelay.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\DisposableIsolatingComposablePart.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IIsolationMetadata.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IPartActivationHostBase.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IsolatedAppDomainCatalog.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IsolatedExportAttribute.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IsolatingComposablePart.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IsolatingComposablePartDefinition.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\IsolationLevel.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\PartActivationHostBase.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\PartAppDomainHost.cs" />
+    <Compile Include="Composition\IsolatedAppDomain\PartHostManager.cs" />
+    <Compile Include="Composition\PartComposer.cs" />
+    <Compile Include="Composition\SafeDirectoryCatalog.cs" />
+    <Compile Include="Configuration\HostConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\MessageBusConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\QueueConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\QueueConfigurationCollection.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\RetryBehaviorConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\RetryLevelConfiguration.cs" />
+    <Compile Include="Configuration\MessageBusConfiguration\RetryLevelConfigurationCollection.cs" />
+    <Compile Include="Configuration\MessageBusInfo\MessageBusInfo.cs" />
+    <Compile Include="Configuration\MessageBusInfo\MessageBusInfoMap.cs" />
+    <Compile Include="Configuration\MessageBusInfo\QueueInfo.cs" />
+    <Compile Include="Configuration\MessageFormatterName.cs" />
+    <Compile Include="Events\ErrorMessageForwardedEventArgs.cs" />
+    <Compile Include="Events\MessageEventArgsBase.cs" />
+    <Compile Include="Events\MessageForwardedEventArgs.cs" />
+    <Compile Include="Events\MessageReceivedEventArgs.cs" />
+    <Compile Include="Logger\ConsoleLogger.cs" />
+    <Compile Include="Logger\ILogger.cs" />
+    <Compile Include="Logger\SwitchboardLogger.cs" />
+    <Compile Include="MessageHandling\IMessage.cs" />
+    <Compile Include="MessageHandling\IMessageHandlerBase.cs" />
+    <Compile Include="MessageHandling\MessageHandlerBase.cs" />
+    <Compile Include="MessageHandling\MessageRetryData.cs" />
+    <Compile Include="MessageHandling\MessageRetryExtensions.cs" />
+    <Compile Include="MessageHandling\SerializableMessage.cs" />
+    <Compile Include="MessageHandling\MessageExtensions.cs" />
+    <Compile Include="MessageHandling\SerializableMessagePriority.cs" />
+    <Compile Include="MessageHandling\StreamUtility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
